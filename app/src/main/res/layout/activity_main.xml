@@ -1,44 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:layout_marginTop="@dimen/margin_title"
-    android:layout_marginLeft="@dimen/margin_lr_layout"
-    android:layout_marginRight="@dimen/margin_lr_layout">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/main_title"
-        android:textSize="@dimen/font_size_title"
-        android:textColor="@color/primary_text"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/margin_title"
-        android:layout_marginTop="@dimen/margin_title"/>
-
-    <EditText
-        android:id="@+id/et_nameHeroe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/hint_superheroe"
-        android:inputType="text"
-        android:autofillHints="" />
-
-    <Button
-        android:id="@+id/btn_send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_send"
-        android:gravity="center"
-        android:layout_gravity="end"
-        android:layout_marginTop="@dimen/margin_btn"
-        android:drawableEnd="@drawable/ic_baseline_send_24"
-        tools:ignore="RtlHardcoded" />
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
