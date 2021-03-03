@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DAM_Task-01</string>
+    <string name="main_title">SuperHéroes</string>
+    <string name="btn_send">Enviar</string>
+    <string name="hint_superheroe">Ingrese el nombre del SuperHéroe</string>
 </resources>
