@@ -2,7 +2,4 @@
 <resources>
     <string name="app_name">SuperHéroes App</string>
     <string name="main_title">SuperHéroes</string>
-    <string name="btn_send">Enviar</string>
-    <string name="hint_superheroe">Ingrese el nombre del superhéroe</string>
-    <string name="notification">Has enviado el valor: - %s - correctamente</string>
 </resources>
