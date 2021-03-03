@@ -2,33 +2,33 @@ package com.juliandominguez.dam_task_01
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
+import com.juliandominguez.dam_task_01.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    /**
+     * Mejora del manejo de findViewById
+     * viewBinding permite solo acceder a los elementos de la vista asociada a la
+     * actividad, evitando así sobre cargas o acceso indeseado a elementos de otras actividades
+     */
+    private lateinit var viewBinding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        /**
-         * Se llama el elemento EditText y button de la vista MainActivity mediante su Id
-         */
-        var edHeroe = findViewById<EditText>(R.id.et_nameHeroe)
-        var btnSend = findViewById<Button>(R.id.btn_send)
-
+        viewBinding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(viewBinding.root)
 
         /**
          * Se activa ek evento de clic en en btn send
          */
-        btnSend.setOnClickListener {
+        this.viewBinding.btnSend.setOnClickListener {
 
             /**
              * Se captura el texto que fue digitado en edHeroe y se almacena en una
              * variable al hacer clic en el btn
              */
-            var strHeroe: String = edHeroe.text.toString()
+            var strHeroe: String = viewBinding.etNameHeroe.text.toString()
 
             /**
              * Se crea la notificación de forma antigua con Toast
