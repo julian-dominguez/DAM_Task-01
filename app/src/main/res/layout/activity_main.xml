@@ -18,7 +18,8 @@
         android:textSize="@dimen/font_size_title"
         android:textColor="@color/primary_text"
         android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/margin_title"/>
+        android:layout_marginBottom="@dimen/margin_title"
+        android:layout_marginTop="@dimen/margin_title"/>
 
     <EditText
         android:id="@+id/et_nameHeroe"
