@@ -3,5 +3,5 @@
     <string name="main_title">Superheros</string>
     <string name="btn_send">Send</string>
     <string name="hint_superheroe">Enter the name of the Superhero</string>
-    <string name="notification">You have sent the value: -% s - correctly</string>
+    <string name="notification">You have sent the value: - %s - correctly</string>
 </resources>
