@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".ViewDataActivity">
 
+    <ImageView
+        android:id="@+id/iv_foto_A2"
+        android:layout_width="158dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/img_description"
+        android:src="@android:drawable/ic_menu_camera"/>
+
+    <TextView
+        android:id="@+id/tv_name_hero_A2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        tools:text="Text Default"
+        android:textSize="@dimen/name_hero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_foto_A2" />
+
+    <RatingBar
+        android:id="@+id/rb_power_rating_A2"
+        android:progressTint="@color/amber"
+        android:isIndicator="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_hero_A2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
