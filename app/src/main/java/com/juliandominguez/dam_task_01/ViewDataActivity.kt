@@ -2,6 +2,8 @@ package com.juliandominguez.dam_task_01
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.juliandominguez.dam_task_01.`class`.Constant
+import com.juliandominguez.dam_task_01.`class`.Hero
 import com.juliandominguez.dam_task_01.databinding.ActivityViewDataBinding
 
 class ViewDataActivity : AppCompatActivity() {
@@ -11,11 +13,6 @@ class ViewDataActivity : AppCompatActivity() {
     /**
      * Se crean constantes con las llaves de los datos del intent
      */
-
-    companion object{
-        const val HERO_HEY = "hero_key"
-        const val POWER_HERO_KEY = "power_hero_key"
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +27,9 @@ class ViewDataActivity : AppCompatActivity() {
         /**
          * Se setean los valores en la vista
          */
-        viewBinding.tvNameHeroA2.text = intent.getString(HERO_HEY)
-        viewBinding.rbPowerRatingA2.rating = intent.getFloat(POWER_HERO_KEY)
+        val hero: Hero = intent.getParcelable<Hero>(Constant.HERO_KEY) as Hero
+
+        viewBinding.tvNameHeroA2.text = hero.nameHero
+        viewBinding.rbPowerRatingA2.rating = hero.ratingPower
     }
 }

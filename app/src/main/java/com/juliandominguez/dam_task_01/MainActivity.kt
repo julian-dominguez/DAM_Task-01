@@ -3,6 +3,8 @@ package com.juliandominguez.dam_task_01
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.juliandominguez.dam_task_01.`class`.Constant
+import com.juliandominguez.dam_task_01.`class`.Hero
 import com.juliandominguez.dam_task_01.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -25,11 +27,15 @@ class MainActivity : AppCompatActivity() {
             val nameHero: String = viewBinding.etNameHeroe.text.toString()
             val powerHero: Float = viewBinding.rbRatingPower.rating
 
+            val hero = Hero(nameHero,powerHero)
+
+            intent.putExtra(Constant.HERO_KEY, hero)
+
             /**
              * Se almacenan los valores para pasarlos de la activity principal a la secundaria.
              */
-            intent.putExtra(ViewDataActivity.HERO_HEY, nameHero)
-            intent.putExtra(ViewDataActivity.POWER_HERO_KEY, powerHero)
+//            intent.putExtra(ViewDataActivity.HERO_HEY, nameHero)
+//            intent.putExtra(ViewDataActivity.POWER_HERO_KEY, powerHero)
             /**
              * Se lanza la segunda vista
              */
