@@ -20,14 +20,16 @@
 
     <EditText
         android:id="@+id/et_name_heroe"
-        android:layout_width="247dp"
-        android:layout_height="48dp"
+        android:layout_width="226dp"
+        android:layout_height="49dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="76dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/et_placeholder"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/iv_foto"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,12 +49,12 @@
         android:id="@+id/rb_rating_power"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="44dp"
+        android:progressTint="@color/amber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v_separador"
-        android:progressTint="@color/amber"/>
+        app:layout_constraintTop_toBottomOf="@+id/v_separador" />
 
     <Button
         android:id="@+id/btn_send"

@@ -31,5 +31,11 @@ class ViewDataActivity : AppCompatActivity() {
 
         viewBinding.tvNameHeroA2.text = hero.nameHero
         viewBinding.rbPowerRatingA2.rating = hero.ratingPower
+
+        viewBinding.fabReturn.setOnClickListener {
+            finish()
+        }
+
+
     }
 }
