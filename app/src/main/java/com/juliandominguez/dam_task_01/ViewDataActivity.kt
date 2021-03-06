@@ -31,6 +31,7 @@ class ViewDataActivity : AppCompatActivity() {
 
         viewBinding.tvNameHeroA2.text = hero.nameHero
         viewBinding.rbPowerRatingA2.rating = hero.ratingPower
+        viewBinding.ivFotoA2.setImageBitmap(hero.photo)
 
         viewBinding.fabReturn.setOnClickListener {
             finish()
