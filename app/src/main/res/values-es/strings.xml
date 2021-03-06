@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">SuperHéroes App</string>
     <string name="main_title">SuperHéroes</string>
+    <string name="img_description">Esta es la imagen del super heroe</string>
+    <string name="et_placeholder">Ingrese el nombre del super heroe</string>
+    <string name="btn_send">Enviar</string>
 </resources>
