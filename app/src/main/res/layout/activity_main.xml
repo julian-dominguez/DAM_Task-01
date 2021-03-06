@@ -9,21 +9,22 @@
 
     <ImageView
         android:id="@+id/iv_foto"
-        android:layout_width="105dp"
-        android:layout_height="110dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/img_description"
         android:src="@android:drawable/ic_menu_camera"
-        android:contentDescription="@string/img_description"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_name_heroe"
-        android:layout_width="226dp"
+        android:layout_width="0dp"
         android:layout_height="49dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/et_placeholder"
@@ -36,19 +37,20 @@
     <View
         android:id="@+id/v_separador"
         android:layout_width="0dp"
-        android:layout_height="1dp"
+        android:layout_height="2dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="184dp"
         android:layout_marginEnd="15dp"
         android:background="@color/primary_dark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RatingBar
         android:id="@+id/rb_rating_power"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="44dp"
         android:progressTint="@color/amber"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,12 +63,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="159dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="159dp"
-        android:text="@string/btn_send"
         android:drawableEnd="@drawable/ic_baseline_send_24"
+        android:text="@string/btn_send"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rb_rating_power" />
 
