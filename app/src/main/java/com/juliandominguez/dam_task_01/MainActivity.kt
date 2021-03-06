@@ -59,11 +59,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * Función lanzada luego de que se toma la foto
+     */
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (Constant.REQUEST_CODE_PHOTO == requestCode && resultCode == Activity.RESULT_OK){
             val infoBundle: Bundle? = data?.extras
-            val heroImage :Bitmap? = infoBundle?.getParcelable<Bitmap>("data")
+            val heroImage :Bitmap? = infoBundle?.getParcelable("data")
 
             viewBinding.ivFoto.setImageBitmap(heroImage)
         }
